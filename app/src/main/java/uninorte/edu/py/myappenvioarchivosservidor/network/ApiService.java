@@ -7,6 +7,6 @@ import retrofit2.http.Body;
 import retrofit2.http.POST;
 
 public interface ApiService {
-    @POST("f444df44-ecf8-4315-b594-6b44cd55d93d")
+    @POST("a3390aae-ec03-48b3-a3aa-0f895421777f")
     Call<ResponseBody> subirBase64(@Body RequestBody body);
 }
