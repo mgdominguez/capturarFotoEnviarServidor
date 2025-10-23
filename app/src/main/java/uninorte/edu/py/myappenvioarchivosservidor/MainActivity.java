@@ -25,5 +25,11 @@ public class MainActivity extends AppCompatActivity {
         btnBase64.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, Base64UploadActivity.class));
         });
+
+        btnMultipart.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, MultipartUploadActivity.class));
+        });
+
+
     }
 }

@@ -111,7 +111,7 @@ public class Base64UploadActivity extends AppCompatActivity {
 
     private void enviarFotoBase64() {
         if (bitmap == null) {
-            Toast.makeText(this, "Primero captura una foto", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Primero captura una foto", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -133,7 +133,7 @@ public class Base64UploadActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 Toast.makeText(Base64UploadActivity.this, "Foto enviada (Base64)", Toast.LENGTH_SHORT).show();
-                Toast.makeText(Base64UploadActivity.this, response.message(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Base64UploadActivity.this, response.message(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
